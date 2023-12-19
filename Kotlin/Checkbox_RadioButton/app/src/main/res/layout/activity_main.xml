@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My hobbies"
+        android:textSize="28dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/chkNN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nghe nhạc"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp" />
+
+    <CheckBox
+        android:id="@+id/chkTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chơi thể thao"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp" />
+
+    <CheckBox
+        android:id="@+id/chkDL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đi du lịch"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp" />
+
+    <CheckBox
+        android:id="@+id/chkDS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đọc sách"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp" />
+
+    <CheckBox
+        android:id="@+id/chkDN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đi ngủ"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Choose"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobbies you chose are:"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/edtHobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Your hobbies will display here!"
+        android:inputType="textMultiLine|textPersonName"
+        android:textColor="#000"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:text="Giới tính" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rdbNam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rdbNu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Confirm" />
+
+
+</LinearLayout>
