@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string-array name="ngonngu">
+        <item>English</item>
+        <item>Vitenamese</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>Spanish</item>
+    </string-array>
+</resources>
