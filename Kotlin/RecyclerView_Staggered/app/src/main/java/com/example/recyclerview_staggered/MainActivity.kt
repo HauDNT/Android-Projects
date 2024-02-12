@@ -2,6 +2,7 @@ package com.example.recyclerview_staggered
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -31,7 +32,11 @@ class MainActivity : AppCompatActivity() {
         danhSach.add(R.drawable.img_7)
 
         rvview.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        val itemAdapter = RvAdapter(danhSach)
+        val itemAdapter = RvAdapter(danhSach, object : RvInterface() {
+            override fun onClickItem(pos: Int) {
+                Toast.makeText(this@MainActivity, "You clicked on image ${danhSach[pos]}", Toast.LENGTH_SHORT).show()
+            }
+        })
         rvview.adapter = itemAdapter
     }
 }
